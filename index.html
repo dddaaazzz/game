@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра «Висельница»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Игра «Висельница»</h1>
+        <p id="wordDisplay">_ _ _ _ _ _</p>
+        <p>Ошибочные буквы: <span id="wrongLetters"></span></p>
+        <p>Осталось попыток: <span id="attemptsLeft">6</span></p>
+
+        <div class="input-container">
+            <input type="text" id="letterInput" maxlength="1" placeholder="Введите букву">
+            <button onclick="guessLetter()">Угадать</button>
+        </div>
+
+        <p id="message"></p>
+        <button onclick="restartGame()">Начать заново</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
